@@ -1,10 +1,10 @@
+const items = document.querySelectorAll('.background__item')
 const parentElement = document.querySelector('.background')
 
 parentElement.addEventListener('click', function(event) {
   if (event.target.matches('.background__item')) {
     openDescription(event)
   } else {
-    const items = document.querySelectorAll('.background__item')
 
     items.forEach(function(item) {
       item.classList.remove('active')
